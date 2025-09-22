@@ -1,1 +1,1 @@
-# workshop-api-example
+Пример voice-2-voice взаимодействия
