@@ -12,8 +12,7 @@ CONVERTED_FILE = "converted.wav"
 OUTPUT_FILE = "output.wav"
 CHUNK_SIZE = 15000  # размер чанка в байтах (~100мс при 24kHz mono PCM16)
 
-REALTIME_URL = f"wss://assistant-api.ml-rag.cloud.yandex.net/v1/realtime/openai?model=gpt://{FOLDER}/speech-realtime-250923"
-
+REALTIME_URL = f"wss://rest-assistant.api.cloud.yandex.net/v1/realtime/openai?model=gpt://{FOLDER}/speech-realtime-250923"
 
 def make_silence_chunk(samples: int):
     """Создаёт чанк тишины заданной длины (samples) в формате PCM16."""
