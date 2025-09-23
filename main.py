@@ -46,7 +46,7 @@ async def main():
             "type": "session.update",
             "session": {
                 "type": "realtime",
-                "output_modalities": ["text", "audio"],  # 👈 теперь хотим и текст, и звук
+                "output_modalities": ["text", "audio"],  # хотим и текст, и звук
                 "audio": {
                     "input": {
                         # Формат входного аудио
@@ -55,7 +55,7 @@ async def main():
                         "turn_detection": {
                             "type": "server_vad",  # включаем серверный VAD
                             "threshold": 0.5,  # чувствительность
-                            "silence_duration_ms": 200,  # тишина, считающаяся концом речи
+                            "silence_duration_ms": 350,  # тишина, считающаяся концом речи
                             "create_response": False,  # ответ создаём вручную
                             "interrupt_response": False
                         }
