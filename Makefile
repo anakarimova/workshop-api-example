@@ -10,7 +10,7 @@ install-ffmpeg:
 	    brew install ffmpeg; \
 	elif command -v apt-get >/dev/null 2>&1; then \
 	    echo "Устанавливаю ffmpeg через apt..."; \
-	    sudo apt-get update && sudo apt-get install -y ffmpeg; \
+	    apt-get update && apt-get install -y ffmpeg; \
 	else \
 	    echo "Установите ffmpeg вручную: https://ffmpeg.org/download.html"; \
 	fi
