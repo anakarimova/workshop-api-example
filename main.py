@@ -7,7 +7,7 @@ import subprocess
 
 API_KEY = "..."
 FOLDER = "..."
-INPUT_FILE = "dialog.wav"
+INPUT_FILE = "..."
 CONVERTED_FILE = "converted.wav"
 OUTPUT_FILE = "output.wav"
 CHUNK_SIZE = 15000  # размер чанка в байтах (~100мс при 24kHz mono PCM16)
